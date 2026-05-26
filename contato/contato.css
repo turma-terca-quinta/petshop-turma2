@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f5f5f0;  
+    color: #000;                
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #3d2817;  
+    color: #fff;                
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #000;  
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 40px;
+}
+
+.form-section h2,
+.info-section h2 {
+    color: #3d2817;  
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #8b6f47;  
+    padding-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3d2817;  
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #8b6f47;  
+    border-radius: 5px;
+    background-color: #fff;      
+    color: #000;                 
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3d2817;  
+    box-shadow: 0 0 5px rgba(61, 40, 23, 0.3);  
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3d2817;  
+    color: #fff;              
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a1a0f;  
+}
+
+button:active {
+    transform: scale(0.98);  
+}
+
+.info-item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 5px solid #3d2817;  
+}
+
+.info-item h3 {
+    color: #3d2817;  
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.info-item p {
+    color: #000;  
+    font-size: 1em;
+}
+
+.info-item a {
+    color: #8b6f47;  
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+    color: #3d2817;  
+}
+
+.whatsapp-link {
+    display: block;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #3d2817;  
+    color: #fff;            
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #2a1a0f;  
+}
+
+footer {
+    background-color: #3d2817;  
+    color: #fff;               
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #000;  
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;  
+        gap: 30px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .form-section h2,
+    .info-section h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 16px;  
+    }
+
+    button,
+    .whatsapp-link {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
