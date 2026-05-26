@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Pet & Cia</title>
+    <link rel="icon" type="image" href="logoo.png">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <h1> Pet & Cia</h1>
+        <p>Entre em contato conosco!</p>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="form-section">
+                <h2>Envie sua Mensagem</h2>
+                <form action="https://formspree.io/f/sua_chave_aqui" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+            
+            <div class="info-section">
+                <h2>Nossas Informações</h2>
+
+                <div class="info-item">
+                    <h3> Telefone</h3>
+                    <p><a href="tel:+5532999999999">(32) 98815-6599</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h3> Endereço</h3>
+                    <p>R. Professor Freire 125 - São Mateus<br>Juiz de Fora - MG, 36025-250</p>
+                </div>
+
+                <div class="info-item">
+                    <h3> Horário</h3>
+                    <p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 14h<br>Domingo: Fechado</p>
+                </div>
+
+                <a href="https://wa.me/5532988156599" class="whatsapp-link" target="_blank">
+                     Fale Conosco no WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pet & Cia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
